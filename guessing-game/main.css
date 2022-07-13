@@ -1,0 +1,49 @@
+/* Write your CSS code in this file */
+body{
+    font-family: arial;
+    text-align: center;
+    background-color:antiquewhite
+}
+
+h1{
+    color: #00a4b4;
+    font-size: 42px;
+    padding:15px;
+    margin:0px;
+}
+
+#pastGuesses{
+    background-color: #DE5285;
+    color:white;
+    width: 400px;
+    padding: 30px;
+    margin: auto;
+    
+}
+
+h2{
+    font-size: 30px
+}
+
+h3{
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+ul{
+    list-style:none;
+    font-size: 20px;
+}
+h4{
+    font-size:18px;
+    font-style: italic;
+    color:#00a4b4;
+}
+
+input{
+    font-size:14px;
+}
+
+button{
+    margin: 0px 20px;
+}
