@@ -1,0 +1,279 @@
+
+html, body {
+    height: 100%;
+    min-width: 400px;
+    text-shadow: 0px 1px 2px rgba(0,0,0,0.3),
+                0px 6px 20px rgba(0,0,0,0.1);
+}
+
+body {
+    font-family: Ubuntu;
+    font-size: 18px;
+    text-align: center;
+    background-image: url("../assets/background.jpg");
+    background-size: cover;
+    background-position: bottom;
+    /* parent flex */
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    /* child flex - pushes the footer to the bottom */
+    flex: 1 0 auto;
+    padding-top: 50px;
+    max-width: 700px;
+}
+
+hr {
+    border: none;
+    margin: 0px;
+    height: 9px;
+    background-image: url("../assets/hr.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+h1 {
+    font-family: Permanent Marker;
+    font-weight: bold;
+    font-size: 2.8em;
+}
+
+h2 {
+    font-family: Permanent Marker;
+    font-size: 1.7em;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 1em;
+}
+
+#guesses {
+    padding: 1em;
+}
+
+#guesses > .guess-div {
+    height: 50px;
+    padding: 5px;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 4px;
+    transition: border 0.3s;
+    -webkit-transition: border 0.3s; /* Safari */
+}
+
+@keyframes win {
+    0% {
+        box-shadow: 0px 1px 2px rgba(16, 143, 12, 0.5),
+                    0px 6px 20px rgba(16, 143, 12, 0.4);
+    }
+    50% {
+        box-shadow: 0px 0px 15px rgba(16, 143, 12, 1),
+                    0px 0px 20px rgba(16, 143, 12, 0.8),
+                    0px 0px 40px rgba(16, 143, 12, 0.4);
+    }
+    100% {
+        box-shadow: 0px 1px 2px rgba(16, 143, 12, 0.5),
+                    0px 6px 20px rgba(16, 143, 12, 0.4);
+    }
+}
+
+#guesses > .win {
+    background-size: 1.1em;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-image: url("../assets/check.png");
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(16, 143, 12, 0.7);
+    box-shadow: 0px 1px 2px rgba(16, 143, 12, 0.5),
+                0px 6px 20px rgba(16, 143, 12, 0.4);
+    animation-name: win;
+    animation-duration: 3s;
+    animation-iteration-count: 50;
+}
+
+#guesses > .lose {
+    background-size: 4em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../assets/x.png");
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0,0,0, 0.7);
+    box-shadow: 0px 1px 2px rgba(0,0,0, 0.5),
+                0px 6px 20px rgba(0,0,0, 0.4);
+}
+
+#guesses > .cold {
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(12, 64, 143, 0.8);
+    box-shadow: 0px 1px 2px rgba(12, 64, 143, 0.5),
+                0px 6px 20px rgba(12, 64, 143, 0.4);
+}
+
+#guesses > .chilly {
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(53, 143, 228, 0.8);
+    box-shadow: 0px 1px 2px rgba(53, 143, 228, 0.5),
+                0px 6px 20px rgba(53, 143, 228, 0.4);
+}
+
+#guesses > .hot {
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(175, 21, 21, 0.8);
+    box-shadow: 0px 1px 2px rgba(175, 21, 21, 0.5),
+                0px 6px 20px rgba(175, 21, 21, 0.4);
+}
+
+#guesses > .warm {
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(216, 111, 25, 0.8);
+    box-shadow: 0px 1px 2px rgba(216, 111, 25, 0.5),
+                0px 6px 20px rgba(216, 111, 25, 0.4);
+}
+
+#guesses > .arrow-div {
+    padding: 0px;
+    background-size: 2.5em;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#guesses > .arrow-up {
+    background-image: url("../assets/arrow-up.png");
+}
+
+#guesses > .arrow-down {
+    background-image: url("../assets/arrow-down.png");
+}
+
+#input-parent {
+    height: 130px;
+    position: relative;
+}
+
+#input-parent .hint-div {
+    font-family: Permanent Marker;
+    font-size: 1.3em;
+}
+
+#input-parent #user-guess {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    height: 2.5em;
+    border-radius: 7%;
+    border: 2px solid rgba(0,0,0,0.6);
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.5),
+                0px 6px 20px rgba(0,0,0,0.4);
+}
+
+#submit {
+    position: absolute;
+    top: 71px;
+    right: 6px;
+}
+
+#submit:disabled {
+    opacity: 1;
+}
+
+#menu-btns {
+    margin-bottom: 10px;
+}
+
+.btn {
+    border-radius: 18%;
+    border: 1px solid rgba(0,0,0,0.3);
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.6),
+                0px 6px 20px rgba(0,0,0,0.1);
+}
+
+.btn-danger, .btn-secondary {
+    width: 70px;
+}
+
+@keyframes action {
+    0% {
+        box-shadow: 0px 1px 2px rgba(0,0,0,0.6),
+                    0px 6px 20px rgba(0,0,0,0.1);
+    }
+    50% {
+        box-shadow: 0px 0px 15px rgba(255, 0, 0, 1),
+                    0px 0px 20px rgba(255, 0, 0, 0.8),
+                    0px 0px 40px rgba(255, 0, 0, 0.4);
+    }
+    100% {
+        box-shadow: 0px 1px 2px rgba(0,0,0,0.6),
+                    0px 6px 20px rgba(0,0,0,0.1);
+    }
+}
+
+#menu-btns .action {
+    animation-name: action;
+    animation-duration: 3s;
+    animation-iteration-count: 50;
+}
+
+#stars {
+    min-height: 56px;
+}
+
+#stars > div {
+    background-size: 46px;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 56px;
+}
+
+#stars .gold-star {
+    background-image: url("../assets/gold-star-small.png");
+}
+
+#stars .silver-star {
+    background-image: url("../assets/silver-star-small.png");
+}
+
+#stars .blank-star {
+    background-image: url("../assets/blank-star-small.png");
+}
+
+footer {
+    color: rgba(0,0,0,1);
+    background-color: rgba(255,255,255,0.7);
+    border-top: 2px solid rgba(0,0,0,0.7);
+    border-bottom: 2px solid rgba(0,0,0,0.7);
+    margin-bottom: 15px;
+    position: relative;
+}
+
+footer img {
+    max-height: 70px;
+}
+
+#project {
+    font-family: Permanent Marker;
+    font-size: 0.6em;
+    position: absolute;
+    bottom: 0px;
+    right: 3px;
+}
+
+#project a {
+    text-decoration: none;
+    color: rgb(70,70,70);
+}
+
+#project img {
+    max-height: 12px;
+}

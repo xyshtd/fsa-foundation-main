@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://tkbrooks.github.io/guessing-game/ -->
+<html class="no-js"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Guessing Game</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="./Guessing Game_files/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="./Guessing Game_files/css" rel="stylesheet">
+        <link href="./Guessing Game_files/css(1)" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./Guessing Game_files/guessinggame.css">
+    </head>
+    <body class="vsc-initialized" data-new-gr-c-s-check-loaded="14.1067.0" data-gr-ext-installed="">
+      <div class="container"> <!-- Open Main Container -->
+
+        <div class="row">
+          <div class="col-12">
+            <h1>Guessing Game</h1>
+          </div>
+          <div class="col-12">
+            <h2>[ 001 - 100 ]</h2>
+          </div>
+        </div>
+
+        <!-- Guess Row -->
+        <div id="guesses" class="row">
+          <div class="col guess-div pt-2"><h3></h3></div>
+          <div class="col-1 arrow-div pt-2"></div>
+          <div class="col guess-div pt-2"><h3></h3></div>
+          <div class="col-1 arrow-div pt-2"></div>
+          <div class="col guess-div pt-2"><h3></h3></div>
+          <div class="col-1 arrow-div pt-2"></div>
+          <div class="col guess-div pt-2"><h3></h3></div>
+          <div class="col-1 arrow-div pt-2"></div>
+          <div class="col guess-div pt-2"><h3></h3></div>
+        </div>
+
+        <hr>
+
+        <!-- Stars -->
+        <div id="stars" class="row"></div>
+
+        <hr>
+
+        <!-- Input & Hint Display Area -->
+        <div id="input-parent" class="row mt-3">
+          <div class="col">
+            <div class="row">
+              <div class="col-6 hint-div"></div>
+              <div class="col-6 hint-div"></div>
+              <div class="col-12 hint-div"></div>
+              <div class="col-6 hint-div"></div>
+              <div class="col-6 hint-div"></div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="form-group">
+              <label for="user-guess" class="sr-only">Enter your guess:</label>
+              <input type="text" class="form-control" id="user-guess" placeholder="" maxlength="3" autofocus="">
+            </div>
+            <button type="button" id="submit" class="btn btn-primary">Guess</button>
+          </div>
+
+          <div class="col">
+            <div class="row">
+              <div class="col-6 hint-div"></div>
+              <div class="col-6 hint-div"></div>
+              <div class="col-12 hint-div"></div>
+              <div class="col-6 hint-div"></div>
+              <div class="col-6 hint-div"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reset & Hint Buttons -->
+        <div id="menu-btns" class="row">
+          <div class="col">
+            <button id="reset" type="button" class="btn btn-danger float-right">Reset</button>
+          </div>
+          <div class="col">
+            <button id="hint" type="button" class="btn btn-secondary float-left">Hint</button>
+          </div>
+        </div>
+
+      </div> <!-- Close Main Container -->
+
+      <!-- Fullstack & Grace Hopper Footer -->
+      <footer>
+        <div class="row m-0">
+          <div class="col-12 col-md-6">
+            <img class="ml-1" src="./Guessing Game_files/fa-logo-large.png" alt="Fullstack Academy Logo">
+          </div>
+          <div class="col-12 col-md-6">
+            <img class="mr-1" src="./Guessing Game_files/gh-logo-large.svg" alt="Grace Hopper Logo">
+          </div>
+        </div>
+      </footer>
+
+      <!-- Link to Github -->
+      <div id="project"><a href="https://github.com/tkbrooks">Project by Tyler Brooks <img src="./Guessing Game_files/github.png" alt="github"></a></div>
+
+      <!-- Scripts -->
+      <script src="./Guessing Game_files/jquery-3.3.1.min.js"></script>
+      <script src="./Guessing Game_files/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="./Guessing Game_files/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="./Guessing Game_files/guessinggame.js"></script>
+    
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
