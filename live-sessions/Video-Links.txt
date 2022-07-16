@@ -1,0 +1,16 @@
+2207 Live Session Recordings
+2207 Foundations Orientation
+https://www.youtube.com/watch?v=ZLQCXekOeno
+
+Test First Part 1 Review
+https://www.youtube.com/watch?v=t_vslhoqFhk
+
+Test First Part 2 Review
+https://www.youtube.com/watch?v=b_2MK7_TNaE
+
+https://github.com/hpr/TestFirst-Part-2/commit/d0edc4356b39390ed0d93d65566c126bcfdb5e12
+
+Test First Part 3 Review
+https://www.youtube.com/watch?v=IpiuB21mBsY
+
+https://github.com/hpr/TestFirst-Review-V2/commit/43d17d0c70695520c30e35a0ef197323f06cd629
